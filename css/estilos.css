@@ -8,7 +8,7 @@
 body{ 
   background-image:url('https://image.freepik.com/fotos-gratis/conceito-textured-pintado-colorido-concreto-do-papel-de-parede-da-parede_53876-31799.jpg');
   background-size:auto 100vh;
-  font-family:Arial;
+  font-family: 'Source Code Pro', monospace;
   height:100vh;
   font-size: 12px;
 }
@@ -71,14 +71,64 @@ a:hover{
 }
 
 .site-title{
-  font-size: 3em;
+  font-size: 4em;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .site-subtitle{
+  font-family: 'Press Start 2P', cursive;
   font-style:italic;
+  line-height: 1.8em;
+}
+
+.portfolio{
+  padding: 2em;
+
+}
+
+.portfolio h2{
+  font-family: 'Press Start 2P', cursive;
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+.portfolio .grid{
+  display: grid;
+  gap: 2em;
+  
+}
+
+@media(min-width: 560px){
+  .portfolio .grid{
+      grid-template-columns: 240px 240px;
+  }
+}
+
+@media(min-width: 880px){
+  .portfolio .grid{
+      align-content: center;
+      grid-template-columns: repeat(3,260px);
+      justify-content: center;
+      height: calc(100vh - 8em -48px);
+  }
+}
+
+.portfolio figure{
+  text-align: center;
 }
 
 .img-portfolio{
-  width: 180px;
   height: 180px;
+  width: 240px;
+  object-fit: cover;
+  object-position: left bottom;
+  border-radius: 20%;
+}
+
+@media(min-width: 1200px;){
+  .img-portfolio{
+    height: auto;
+    width: 100%;
+  }
 }
