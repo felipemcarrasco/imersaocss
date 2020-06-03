@@ -1,12 +1,49 @@
+/* Soft Reset do CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{ 
   background-image:url('https://image.freepik.com/fotos-gratis/conceito-textured-pintado-colorido-concreto-do-papel-de-parede-da-parede_53876-31799.jpg');
   background-size:auto 100vh;
   font-family:Arial;
   height:100vh;
+  font-size: 12px;
+}
+
+/*se a tela tiver pelo menos 400px vai carregar esses estilos*/
+@media (min-width: 400px){
+ body{
+   font-size: 14px;
+ }
+}
+
+/*se a tela tiver pelo menos 600px vai carregar esses estilos*/
+@media (min-width: 600px){
+  body{
+    font-size: 18px;
+  }
+ }
+
+header{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu a{
+  display: block;
+  padding: 10px 20px;
 }
 
 .menu li{
@@ -33,6 +70,15 @@ a:hover{
   text-align: center;
 }
 
+.site-title{
+  font-size: 3em;
+}
+
 .site-subtitle{
   font-style:italic;
+}
+
+.img-portfolio{
+  width: 180px;
+  height: 180px;
 }
