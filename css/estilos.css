@@ -107,11 +107,12 @@ a:hover{
 
 .site-title{
   font-size: 4em;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Source Code Pro', monospace;
+  margin-bottom: 1em;
 }
 
 .site-subtitle{
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Source Code Pro', monospace;
   font-style:italic;
   line-height: 1.8em;
 }
@@ -134,7 +135,7 @@ a:hover{
 .sobre h2,
 .contato h2,
 .portfolio h2{
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Source Code Pro', monospace;
   color: whitesmoke;
   margin-bottom: 1.5em;
   font-size: 2em;
